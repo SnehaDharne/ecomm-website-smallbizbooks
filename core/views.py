@@ -37,6 +37,18 @@ def is_valid_form(values):
     return valid
 
 
+def search(request):
+    if request.method == 'POST':
+        searched = request.POST['searched']
+        items = Item.objects.filter(title__contains=searched)
+
+        return render(request, 'templates/home.html', {'searched': searched, 'items': items})
+
+    else:
+        # return render(request, 'events/search.html', {})
+        messages.info(request, "You do not have an active order")
+
+
 class CheckoutView(View):
     def get(self, *args, **kwargs):
         try:

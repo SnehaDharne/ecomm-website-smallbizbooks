@@ -10,6 +10,8 @@ CATEGORY_CHOICES = (
     ('S', 'Shirt'),
     ('SW', 'Sport wear'),
     ('OW', 'Outwear')
+
+    # make this stores store1 store2 store2
 )
 
 LABEL_CHOICES = (

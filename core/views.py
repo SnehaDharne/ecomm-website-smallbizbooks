@@ -1,4 +1,5 @@
 import random
+from re import template
 import string
 
 import stripe
@@ -361,6 +362,10 @@ class HomeView(ListView):
     model = Item
     paginate_by = 10
     template_name = "home.html"
+
+class TatBookStoreView(ListView):
+   def get(self, *args, **kwargs):
+        return render(self.request, 'order_summary.html')
 
 
 class OrderSummaryView(LoginRequiredMixin, View):

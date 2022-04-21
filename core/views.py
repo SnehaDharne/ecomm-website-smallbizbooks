@@ -364,8 +364,18 @@ class HomeView(ListView):
     template_name = "home.html"
 
 class TatBookStoreView(ListView):
-   def get(self, *args, **kwargs):
-        return render(self.request, 'order_summary.html')
+    # def get(self, *args, **kwargs):
+    #     return render(self.request, 'home2.html')
+    model = Item
+    paginate_by = 10
+    template_name = "tatbookstore.html"
+
+class PolBookStoreView(ListView):
+    # def get(self, *args, **kwargs):
+    #     return render(self.request, 'home2.html')
+    model = Item
+    paginate_by = 10
+    template_name = "politicsandprose.html"
 
 
 class OrderSummaryView(LoginRequiredMixin, View):

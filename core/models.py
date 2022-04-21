@@ -7,9 +7,11 @@ from django_countries.fields import CountryField
 
 
 CATEGORY_CHOICES = (
-    ('S', 'Shirt'),
-    ('SW', 'Sport wear'),
-    ('OW', 'Outwear')
+    ('H', 'Horror'),
+    ('R', 'Romance'),
+    ('P', 'Politics'),
+    ('M',"Mystery"),
+    ('F','Fiction')
 
     # make this stores store1 store2 store2
 )

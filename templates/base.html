@@ -15,12 +15,19 @@
   <link href="{% static 'css/style.min.css' %}" rel="stylesheet">
   <style type="text/css">
     html,
-    body,
     header,
+    body,
     .carousel {
       height: 60vh;
     }
-
+    html{
+      min-height: 100%;   }
+    body {
+      font-family: 'Courier New', monospace; !important
+      background-image:linear-gradient(peachpuff,white);
+  
+      background-repeat: no-repeat;
+    }
     @media (max-width: 740px) {
 
       html,
@@ -66,7 +73,7 @@
 
     {% block extra_body %}
     {% endblock %}
-
+    
     {% include "footer.html" %}
     {% include "scripts.html" %}
 

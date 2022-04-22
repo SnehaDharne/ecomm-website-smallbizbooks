@@ -22,18 +22,18 @@
         <!-- Links -->
         <ul class="navbar-nav mr-auto">
           <li class="nav-item ">
-            <a class="nav-link" href="{% url 'core:home' %}">All
+            <a class="nav-link"style="color: black"  href="{% url 'core:home' %}">All
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{% url 'core:tat' %}">Tatteredcover Bookstore</a>
+            <a class="nav-link" style="color: black" href="{% url 'core:tat' %}">Politics</a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="#">Politics and Prose</a>
+            <a class="nav-link"style="color: black"  href="#">Mystery</a>
             <span class="sr-only">(current)</span>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">National Bookstore</a>
+            <a class="nav-link"style="color: black"  href="#">Fiction</a>
           </li>
 
         </ul>
@@ -54,7 +54,7 @@
     <section class="text-center mb-4">
 
       <div class="row wow fadeIn">
-        {% for item in items %}
+        {% for item in item %}
         <div class="col-lg-3 col-md-6 mb-4">
 
           <div class="card">
@@ -80,7 +80,7 @@
               </h5>
 
               <h4 class="font-weight-bold blue-text">
-                <strong>$
+                <strong>Rs
                   {% if item.discount_price %}
                   {{ item.discount_price }}
                   {% else %}
@@ -122,7 +122,7 @@
               </h5>
 
               <h4 class="font-weight-bold blue-text">
-                <strong>$
+                <strong>Rs
                   {% if item.discount_price %}
                   {{ item.discount_price }}
                   {% else %}

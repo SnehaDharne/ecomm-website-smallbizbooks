@@ -1751,7 +1751,7 @@ ul.stepper li.warning a .circle {
 a {
     cursor: pointer;
     text-decoration: none;
-    color: #007bff;
+    color: #000;
     -webkit-transition: all .2s ease-in-out;
     -o-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out
@@ -2443,7 +2443,7 @@ a.text-light:hover {
     cursor: pointer;
     overflow: hidden;
     user-select: none;
-    -webkit-tap-highlight-color: transparent
+    -webkit-tap-highlight-color: #896052
 }
 
 .waves-effect .waves-ripple {

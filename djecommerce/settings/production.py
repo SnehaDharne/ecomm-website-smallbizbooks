@@ -1,6 +1,7 @@
+from pickle import FALSE
 from .base import *
 
-DEBUG = config('DEBUG', cast=bool)
+DEBUG = FALSE
 ALLOWED_HOSTS = ['ip-address', 'www.your-website.com']
 
 AUTH_PASSWORD_VALIDATORS = [
@@ -21,5 +22,4 @@ DATABASES = {
     }
 }
 
-STRIPE_PUBLIC_KEY = config('STRIPE_LIVE_PUBLIC_KEY')
-STRIPE_SECRET_KEY = config('STRIPE_LIVE_SECRET_KEY')
+

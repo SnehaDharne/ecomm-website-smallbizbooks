@@ -22,14 +22,14 @@ DEBUG_TOOLBAR_PANELS = [
 ]
 
 
-def show_toolbar(request):
-    return False
+# def show_toolbar(request):
+#     return False
 
 
-DEBUG_TOOLBAR_CONFIG = {
-    'INTERCEPT_REDIRECTS': False,
-    'SHOW_TOOLBAR_CALLBACK': show_toolbar
-}
+# DEBUG_TOOLBAR_CONFIG = {
+#     'INTERCEPT_REDIRECTS': False,
+#     'SHOW_TOOLBAR_CALLBACK': show_toolbar
+# }
 
 DATABASES = {
     'default': {
@@ -38,5 +38,3 @@ DATABASES = {
     }
 }
 
-STRIPE_PUBLIC_KEY = config('STRIPE_TEST_PUBLIC_KEY')
-STRIPE_SECRET_KEY = config('STRIPE_TEST_SECRET_KEY')
